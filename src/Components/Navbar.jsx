@@ -33,11 +33,11 @@ const Navbar = () => {
                         href: "https://github.com/dhyani081",
                         color: "hover:text-gray-400"
                     },
-                    {
-                        icon: <FaMailBulk />,
-                        href: "mailto:vijayndhyani.dev@gmail.com",
-                        color: "hover:text-pink-400"
-                    },
+                    // {
+                    //     icon: <FaMailBulk />,
+                    //     href: "mailto:vijayndhyani.dev@gmail.com",
+                    //     color: "hover:text-pink-400"
+                    // },
                     {
                         icon: <SiLeetcode />,
                         href: "https://leetcode.com/u/dhyani081/",

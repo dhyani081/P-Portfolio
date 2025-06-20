@@ -1,3 +1,4 @@
+import { address } from "framer-motion/client";
 import project1 from "../assets/projects/Project-1.png";
 import project2 from "../assets/projects/Project-2.png";
 import project3 from "../assets/projects/Project-3.png";
@@ -49,7 +50,7 @@ export const PROJECTS = [
 export const CONTACT = {
   title: "Contact",
   subtitle: "Feel free to reach out to me for any questions or opportunities!",
- 
+  address: "New Delhi",
   phoneNo: "+91 7505377116",
   email: "vijayndhyai.dev@gmail.com"
 };
