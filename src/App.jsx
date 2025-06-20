@@ -1,11 +1,12 @@
 import React from 'react'
-import Navbar from './Components/Navbar'
-import Hero from './Components/Hero'
-import About from './Components/About'
-import Technologies from './Components/Technologies'
-import Internship from './Components/Internship'
-import Projects from './Components/Projects'
-import Contact from './Components/Contact'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Technologies from './components/Technologies'
+import Internship from './components/Internship'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import ContactForm from './components/ContactForm'
 
 
 
@@ -24,6 +25,8 @@ const App = () => {
         <Internship />
         <Projects />
         <Contact />
+        <ContactForm/>
+        
       </div>
     </div>
   )

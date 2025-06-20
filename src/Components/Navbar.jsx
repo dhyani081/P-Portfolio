@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaMailBulk } from "react-icons/fa";
+import { FaLinkedin, FaGithub, } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const Navbar = () => {
