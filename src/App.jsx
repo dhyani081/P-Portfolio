@@ -6,7 +6,7 @@ import Technologies from './components/Technologies'
 import Internship from './components/Internship'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
-import ContactForm from './components/ContactForm'
+// import ContactForm from './components/ContactForm'
 
 
 
@@ -25,7 +25,7 @@ const App = () => {
         <Internship />
         <Projects />
         <Contact />
-        <ContactForm/>
+        {/* <ContactForm/> */}
         
       </div>
     </div>
