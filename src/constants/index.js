@@ -52,5 +52,5 @@ export const CONTACT = {
   subtitle: "Feel free to reach out to me for any questions or opportunities!",
   address: "New Delhi",
   phoneNo: "+91 7505377116",
-  email: "vijayndhyai.dev@gmail.com"
+  email: "vijayndhyani.dev@gmail.com"
 };
