@@ -1,38 +1,57 @@
 import { INTERNSHIP } from "../constants";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+
 const Internship = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-neutral-900 pb-8 px-4 md:px-8 lg:px-16">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl">Internship
-        
-        </motion.h2>
+        initial={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.6 }}
+        className="my-16 text-center text-4xl font-semibold tracking-tight text-gray-100"
+      >
+        Internship
+      </motion.h2>
+
       <div>
         {INTERNSHIP.map((internship, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+          <div
+            key={index}
+            className="mb-12 flex flex-col lg:flex-row lg:items-start lg:justify-center gap-6"
+          >
             <motion.div
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.5 }}
-             className="w-full lg:w-1/4">
-              <p className="mb-2 text-sm text-neutral-400">{internship.year}</p>
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -80 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="w-full lg:w-1/4 text-center lg:text-left"
+            >
+              <p className="text-sm font-mono text-neutral-500">{internship.year}</p>
             </motion.div>
-            <motion.div 
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 1 }}
-            className="w-full max-w-xl lg:w-3/4">
-              <h6 className="mb-2 font-semibold">
-                {internship.role} -<span className="text-sm text-purple-100">{internship.company}
+
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 80 }}
+              transition={{ duration: 0.7, delay: index * 0.15 }}
+              className="w-full lg:w-3/4 max-w-3xl"
+            >
+              <h6 className="mb-3 text-xl font-semibold text-gray-200">
+                {internship.role}{" "}
+                <span className="text-purple-400 text-base font-normal">
+                  - {internship.company}
                 </span>
               </h6>
-              <p className="mb-4 text-neutral-400">{internship.description}</p>
-              {internship.technologies.map((tech, index) => (
-                <span key={index} className="mr-2 mt-4 round bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800">{tech}</span>
-              ))}
+              <p className="mb-4 text-neutral-400 leading-relaxed">{internship.description}</p>
+
+              <div className="flex flex-wrap gap-3">
+                {internship.technologies.map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="inline-block rounded-full bg-neutral-800 px-3 py-1 text-sm font-semibold text-purple-300 transition-colors hover:bg-purple-700 cursor-default select-none"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           </div>
         ))}
