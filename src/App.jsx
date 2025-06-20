@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
-import About from './components/About'
-import Technologies from './components/Technologies'
-import Internship from './components/Internship'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
+import About from './Components/About'
+import Technologies from './Components/Technologies'
+import Internship from './Components/Internship'
+import Projects from './Components/Projects'
+import Contact from './Components/Contact'
 
 
 
